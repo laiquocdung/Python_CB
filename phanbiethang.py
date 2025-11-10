@@ -1,0 +1,12 @@
+thang=int(input("Nhap thang"))
+match thang:
+    case 2|3|4:
+        print("Mua xuan")
+    case 5|6|7:
+        print("Mua ha")
+    case 8|9|10:
+        print("Mua thu")
+    case 11|12|1:
+        print("Mua dong")
+    case _:
+        print("Sai thang")
