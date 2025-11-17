@@ -1,6 +1,9 @@
-namDl= int(input("nhap nam sinh cua ban"))
-duCan=namDl%10
-duChi=namDl%12
+try:
+    namDl= int(input("nhap nam sinh cua ban"))
+except:print("loi nhap lieu")
+else:
+    duCan=namDl%10
+    duChi=namDl%12
 match duCan:
     case 0:
         Can="Canh"
@@ -47,4 +50,4 @@ match duChi:
         Chi="Ngo"
     case 11:
         Chi="Mui"
-NamAL=Can+Chi
+print("NamAL=Can+Chi")
