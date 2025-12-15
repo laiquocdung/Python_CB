@@ -20,11 +20,11 @@ def cl(Diem):
             diemnhohon8+=1
     return diemlonhon8,diemnhohon8
 def tang(Diem):
-    i=Diem
-    while i ==10:
-        print (i,end=' ')
-        i+=1
-    return i
+    for i in range(len(Diem)-1):
+        for j in range(i+1,len(Diem)):
+            if (Diem[i]>Diem[j]):
+                Diem[i],Diem[j]=Diem[j],Diem[i]
+    return Diem
 
 
 
